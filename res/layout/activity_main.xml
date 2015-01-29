@@ -16,7 +16,7 @@
         android:paddingLeft="16dp"
         android:paddingRight="16dp"
         android:textAppearance="?android:attr/textAppearanceLarge"
-        android:textColor="@android:color/holo_blue_dark"
+        android:textColor="@color/teal"
         android:textSize="@dimen/TextLarger"
         android:fontFamily="sans-serif-light" />
 
@@ -41,7 +41,7 @@
         android:paddingLeft="16dp"
         android:paddingRight="16dp"
         android:textAppearance="?android:attr/textAppearanceSmall"
-        android:fontFamily="sans-serif-light" />
+        android:fontFamily="sans-serif" />
 
     <LinearLayout
         android:layout_width="fill_parent"
@@ -51,21 +51,14 @@
         android:gravity="right" >
 
         <Button
-            android:id="@+id/button_check_now"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/button_check_now"
-            android:paddingLeft="16dp"
-            android:paddingRight="16dp"
-            android:onClick="onButtonCheckNowClick" />
-
-        <Button
             android:id="@+id/button_flash_now"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/button_flash_now"
+            android:textColor="@color/teal"
             android:paddingLeft="16dp"
             android:paddingRight="16dp"
+            style="?android:attr/borderlessButtonStyle"
             android:onClick="onButtonFlashNowClick" />
     </LinearLayout>
 

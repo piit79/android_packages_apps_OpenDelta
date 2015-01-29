@@ -51,7 +51,7 @@ public class MainActivity extends Activity {
     private TextView title = null;
     private TextView sub = null;
     private ProgressBar progress = null;
-    private Button checkNow = null;
+    private MenuItem refresh = null;
     private Button flashNow = null;
     
     private Config config;
@@ -76,7 +76,6 @@ public class MainActivity extends Activity {
         title = (TextView) findViewById(R.id.text_title);
         sub = (TextView) findViewById(R.id.text_sub);
         progress = (ProgressBar) findViewById(R.id.progress);
-        checkNow = (Button) findViewById(R.id.button_check_now);
         flashNow = (Button) findViewById(R.id.button_flash_now);
         
         config = Config.getInstance(this);
@@ -86,6 +85,7 @@ public class MainActivity extends Activity {
     public boolean onCreateOptionsMenu(Menu menu) {
         getMenuInflater().inflate(R.menu.main, menu);
         
+        refresh = (MenuItem) menu.findItem(R.id.action_refresh);
         if (!config.getSecureModeEnable()) {
             menu.findItem(R.id.action_secure_mode).setVisible(false);
         } else {
@@ -179,6 +179,10 @@ public class MainActivity extends Activity {
             case android.R.id.home:
                 finish();
                 return true;
+            case R.id.action_refresh:
+            	refresh.setActionView(R.layout.actionbar_iprogress);
+                UpdateService.startCheck(this);
+                return true;
             case R.id.action_networks:
                 showNetworks();
                 return true;
@@ -218,7 +222,7 @@ public class MainActivity extends Activity {
                 if (ms == 0) {
                     return "";
                 } else {
-                    return String.format("%s\n%s", filename, getString(R.string.last_checked,
+                    return String.format("%s\n\n%s", filename, getString(R.string.last_checked,
                             DateFormat.getDateFormat(MainActivity.this).format(date),
                             DateFormat.getTimeFormat(MainActivity.this).format(date)
                             ));
@@ -282,7 +286,7 @@ public class MainActivity extends Activity {
                     long ms = intent.getLongExtra(UpdateService.EXTRA_MS, 0);
 
                     if ((ms <= 500) || (current <= 0) || (total <= 0)) {
-                        sub = String.format(Locale.ENGLISH, "%s\n%.0f %%", filename,
+                        sub = String.format(Locale.ENGLISH, "%s\n%.0f%%", filename,
                                 intent.getFloatExtra(UpdateService.EXTRA_PROGRESS, 0));
                     } else {
                         float kibps = ((float) current / 1024f) / ((float) ms / 1000f);
@@ -292,12 +296,12 @@ public class MainActivity extends Activity {
 
                         if (kibps < 10000) {
                             sub = String.format(Locale.ENGLISH,
-                                    "%s\n%.0f %%, %.0f KiB/s, %02d:%02d", filename,
+                                    "%s\n%.0f%%, %.0f KiB/s, %02d:%02d", filename,
                                     intent.getFloatExtra(UpdateService.EXTRA_PROGRESS, 0), kibps,
                                     sec / 60, sec % 60);
                         } else {
                             sub = String.format(Locale.ENGLISH,
-                                    "%s\n%.0f %%, %.0f MiB/s, %02d:%02d", filename,
+                                    "%s\n%.0f%%, %.0f MiB/s, %02d:%02d", filename,
                                     intent.getFloatExtra(UpdateService.EXTRA_PROGRESS, 0),
                                     kibps / 1024f, sec / 60, sec % 60);
                         }
@@ -311,7 +315,12 @@ public class MainActivity extends Activity {
             progress.setProgress((int) current);
             progress.setMax((int) total);
 
-            checkNow.setVisibility(enableCheck ? View.VISIBLE : View.GONE);
+            // FIXME: refresh is (sometimes?) set only after this code
+            if (refresh != null) {
+                if (enableCheck) {
+                    refresh.setActionView(null);
+                }
+            }
             flashNow.setVisibility(enableFlash ? View.VISIBLE : View.GONE);
         }
     };
@@ -402,7 +411,7 @@ public class MainActivity extends Activity {
     private Runnable flashStart = new Runnable() {       
         @Override
         public void run() {
-            checkNow.setEnabled(false);
+            refresh.setEnabled(false);
             flashNow.setEnabled(false);
             UpdateService.startFlash(MainActivity.this);
         }

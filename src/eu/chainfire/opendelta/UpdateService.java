@@ -1049,6 +1049,7 @@ public class UpdateService
                         }
                     }
                     writeString(os, "wipe cache");
+                    writeString(os, "wipe dalvik");
                 } finally {
                     os.close();
                 }
@@ -1080,6 +1081,8 @@ public class UpdateService
                     }
                     writeString(os,
                             "run_program(\"/sbin/busybox\", \"rm\", \"-rf\", \"/cache/*\");");
+                    writeString(os,
+                            "run_program(\"/sbin/busybox\", \"rm\", \"-rf\", \"/data/dalvik-cache/*\");");
                 } finally {
                     os.close();
                 }

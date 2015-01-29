@@ -3,6 +3,7 @@
     <string name="app_name">OpenDelta</string>
     <string name="title">Actualitzacions del sistema</string>
 
+    <string name="action_refresh">Comprovar</string>
     <string name="action_networks">Xarxes</string>
     <string name="title_networks">Actualització automàtica de les xarxes</string>
     <string name="network_2g">2G</string>
@@ -25,27 +26,26 @@
     ]]></string>
 
     <string name="state_action_none">El sistema està actualitzat</string>
-    <string name="state_action_checking">Comprovant si hi ha actualitzacions disponibles &#8230;</string>
-    <string name="state_action_checking_md5">Verificant arxiu &#8230;</string>
-    <string name="state_action_searching">Buscant arxius &#8230;</string>
-    <string name="state_action_searching_md5">Verificant arxiu &#8230;</string>
-    <string name="state_action_downloading">Descarregant &#8230;</string>
-    <string name="state_action_applying">Apedaçant &#8230;</string>
-    <string name="state_action_applying_patch">Apedaçant &#8230;</string>
-    <string name="state_action_applying_md5">Verificant arxiu &#8230;</string>
+    <string name="state_action_checking">Comprovant si hi ha actualitzacions disponibles&#8230;</string>
+    <string name="state_action_checking_md5">Verificant arxiu&#8230;</string>
+    <string name="state_action_searching">Buscant arxius&#8230;</string>
+    <string name="state_action_searching_md5">Verificant arxiu&#8230;</string>
+    <string name="state_action_downloading">Descarregant&#8230;</string>
+    <string name="state_action_applying">Apedaçant&#8230;</string>
+    <string name="state_action_applying_patch">Apedaçant&#8230;</string>
+    <string name="state_action_applying_md5">Verificant arxiu&#8230;</string>
     <string name="state_action_ready">Una actualització està disponible</string>
-    <string name="state_error_disk_space">¡ No hi ha espai suficient en el disc !</string>
+    <string name="state_error_disk_space">¡ No hi ha espai suficient en el disc!</string>
     <string name="state_error_unknown">Error desconegut</string>
 
     <string name="error_disk_space_sub" formatted="false">%d MiB disponible, %d MiB necesari</string>
 
     <string name="notify_update_available">Una actualització està disponible</string>
-    <string name="notify_checking">Comprovant si hi ha actualitzacions disponibles &#8230;</string>
+    <string name="notify_checking">Comprovant si hi ha actualitzacions disponibles&#8230;</string>
 
     <string name="last_checked" formatted="false">Darrera comprovació el %s a les %s</string>
     <string name="last_checked_never">Mai s\'ha comprovat, ¿Potser li agradaria fer-ho?</string>
 
-    <string name="button_check_now">Comprovar ara &#8230;</string>
     <string name="button_flash_now">Flashejar ara</string>
 
     <string name="action_secure_mode">Mode Segur</string>
