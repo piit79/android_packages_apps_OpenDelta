@@ -68,12 +68,12 @@ public class Scheduler
     private static final String PREF_LAST_CHECK_ATTEMPT_TIME_NAME = "last_check_attempt_time";
     private static final long PREF_LAST_CHECK_ATTEMPT_TIME_DEFAULT = 0L;
 
-    private static final long CHECK_THRESHOLD_MS = 6 * AlarmManager.INTERVAL_HOUR;
+    private static final long CHECK_THRESHOLD_MS = AlarmManager.INTERVAL_HALF_HOUR; // 6 * AlarmManager.INTERVAL_HOUR;
     private static final long ALARM_INTERVAL_START = AlarmManager.INTERVAL_FIFTEEN_MINUTES;
-    private static final long ALARM_INTERVAL_INTERVAL = AlarmManager.INTERVAL_HALF_HOUR;
-    private static final long ALARM_SECONDARY_WAKEUP_TIME = 3 * AlarmManager.INTERVAL_HOUR;
-    private static final long ALARM_DETECT_SLEEP_TIME = (5 * AlarmManager.INTERVAL_HOUR)
-            + AlarmManager.INTERVAL_HALF_HOUR;
+    private static final long ALARM_INTERVAL_INTERVAL = AlarmManager.INTERVAL_FIFTEEN_MINUTES; // AlarmManager.INTERVAL_HALF_HOUR;
+    private static final long ALARM_SECONDARY_WAKEUP_TIME = AlarmManager.INTERVAL_FIFTEEN_MINUTES; // 3 * AlarmManager.INTERVAL_HOUR;
+    private static final long ALARM_DETECT_SLEEP_TIME = AlarmManager.INTERVAL_FIFTEEN_MINUTES; // (5 * AlarmManager.INTERVAL_HOUR)
+            // + AlarmManager.INTERVAL_HALF_HOUR;
 
     private OnWantUpdateCheckListener onWantUpdateCheckListener = null;
     private AlarmManager alarmManager = null;

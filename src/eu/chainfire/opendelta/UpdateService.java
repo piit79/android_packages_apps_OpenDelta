@@ -672,7 +672,7 @@ public class UpdateService
         if (!isStateBusy(state) &&
                 (userInitiated || (
                 networkState.getState() &&
-                        batteryState.getState() &&
+                batteryState.getState() &&
                 !screenState.getState()
                 )
                 )) {
