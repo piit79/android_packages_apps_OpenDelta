@@ -40,7 +40,7 @@
 
     <string name="error_disk_space_sub" formatted="false">%d MiB available, %d MiB required</string>
 
-    <string name="notify_update_available">An update is available</string>
+    <string name="notify_update_available">A CherryCM12 update is available</string>
     <string name="notify_checking">Checking for updates&#8230;</string>
 
     <string name="last_checked" formatted="false">Last checked on %s at %s</string>
