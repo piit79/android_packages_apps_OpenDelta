@@ -36,7 +36,7 @@ public class BatteryState {
     private OnBatteryStateListener onBatteryStateListener = null;
     private volatile Boolean stateLast = null;
 
-    private int minLevel = 50;
+    private int minLevel = 30;
     private boolean chargeOnly = true;
 
     private IntentFilter filter = new IntentFilter(Intent.ACTION_BATTERY_CHANGED);
