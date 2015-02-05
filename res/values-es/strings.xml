@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">OpenDelta</string>
-    <string name="title">Actualizaciones del sistema</string>
+    <string name="title">Actualizaciones</string>
 
     <string name="action_refresh">Comprobar ahora</string>
     <string name="action_networks">Redes</string>

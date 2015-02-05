@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">OpenDelta</string>
-    <string name="title">Sistem Güncellemeleri</string>
+    <string name="title">Güncellemeleri</string>
 
     <string name="action_refresh">Şimdi kontrol et</string>
     <string name="action_networks">AĞLAR</string>

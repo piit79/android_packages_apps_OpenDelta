@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">OpenDelta</string>
-    <string name="title" product="tablet">Обновление планшета</string>
-    <string name="title" product="default">Обновление телефона</string>
+    <string name="title">Обновление</string>
 
     <string name="action_refresh">Проверить</string>
     <string name="action_networks">Сети для обновлений</string>

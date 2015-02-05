@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">OpenDelta</string>
-    <string name="title">Systemopdateringer</string>
+    <string name="title">Opdateringer</string>
 
     <string name="action_refresh">Tjek</string>
     <string name="action_networks">Netværk</string>

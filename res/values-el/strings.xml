@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">OpenDelta</string>
-    <string name="title">Ενημερώσεις συστήματος</string>
+    <string name="title">Ενημερώσεις</string>
 
     <string name="action_refresh">Έλεγχος τώρα</string>
     <string name="action_networks">Δίκτυα</string>
