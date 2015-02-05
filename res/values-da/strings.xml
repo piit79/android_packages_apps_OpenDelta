@@ -23,20 +23,20 @@
         Delta dekodning baseret på <b>xdelta</b>, copyright &copy; _COPYRIGHT_XDELTA_ <b>Joshua MacDonald</b><br>
     ]]></string>
   <string name="state_action_none">Dit system er opdateret</string>
-  <string name="state_action_checking">Søger efter opdateringer &#8230;</string>
-  <string name="state_action_checking_md5">Kontrollerer fil &#8230;</string>
-  <string name="state_action_searching">Søger efter filer &#8230;</string>
-  <string name="state_action_searching_md5">Kontrollerer fil &#8230;</string>
-  <string name="state_action_downloading">Downloader &#8230;</string>
-  <string name="state_action_applying">Patcher &#8230;</string>
-  <string name="state_action_applying_patch">Patcher &#8230;</string>
-  <string name="state_action_applying_md5">Kontrollerer fil &#8230;</string>
+  <string name="state_action_checking">Søger efter opdateringer&#8230;</string>
+  <string name="state_action_checking_md5">Kontrollerer fil&#8230;</string>
+  <string name="state_action_searching">Søger efter filer&#8230;</string>
+  <string name="state_action_searching_md5">Kontrollerer fil&#8230;</string>
+  <string name="state_action_downloading">Downloader&#8230;</string>
+  <string name="state_action_applying">Patcher&#8230;</string>
+  <string name="state_action_applying_patch">Patcher&#8230;</string>
+  <string name="state_action_applying_md5">Kontrollerer fil&#8230;</string>
   <string name="state_action_ready">En opdatering er tilgængelig</string>
   <string name="state_error_disk_space">Der er ikke nok plads!</string>
   <string name="state_error_unknown">Ukendt fejl</string>
   <string name="error_disk_space_sub" formatted="false">%d MiB tilgængelig, %d MiB påkrævet</string>
   <string name="notify_update_available">En opdatering er tilgængelig</string>
-  <string name="notify_checking">Søger efter opdateringer &#8230;</string>
+  <string name="notify_checking">Søger efter opdateringer&#8230;</string>
   <string name="last_checked" formatted="false">Sidste tjek: %s kl. %s</string>
   <string name="last_checked_never">Der er aldrig blevet tjekket for opdateringer, vil du tjekke nu?</string>
   <string name="button_flash_now">Installer nu</string>

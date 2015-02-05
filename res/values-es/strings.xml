@@ -23,22 +23,22 @@
         Decodificación Delta basada en <b>xdelta</b>, copyright &copy; _COPYRIGHT_XDELTA_ <b>Joshua MacDonald</b><br>
     ]]></string>
   <string name="state_action_none">El sistema está actualizado</string>
-  <string name="state_action_checking">Comprobando si hay actualizaciones disponibles &#8230;</string>
-  <string name="state_action_checking_md5">Verificando archivo &#8230;</string>
-  <string name="state_action_searching">Buscando archivos &#8230;</string>
-  <string name="state_action_searching_md5">Verificando archivo &#8230;</string>
-  <string name="state_action_downloading">Descargando &#8230;</string>
-  <string name="state_action_applying">Parcheando &#8230;</string>
-  <string name="state_action_applying_patch">Parcheando &#8230;</string>
-  <string name="state_action_applying_md5">Verificando archivo &#8230;</string>
+  <string name="state_action_checking">Comprobando si hay actualizaciones disponibles&#8230;</string>
+  <string name="state_action_checking_md5">Verificando archivo&#8230;</string>
+  <string name="state_action_searching">Buscando archivos&#8230;</string>
+  <string name="state_action_searching_md5">Verificando archivo&#8230;</string>
+  <string name="state_action_downloading">Descargando&#8230;</string>
+  <string name="state_action_applying">Parcheando&#8230;</string>
+  <string name="state_action_applying_patch">Parcheando&#8230;</string>
+  <string name="state_action_applying_md5">Verificando archivo&#8230;</string>
   <string name="state_action_ready">Una actualización está disponible</string>
-  <string name="state_error_disk_space">¡ No hay espacio suficiente en el disco !</string>
+  <string name="state_error_disk_space">¡No hay espacio suficiente en el disco!</string>
   <string name="state_error_unknown">Error desconocido</string>
   <string name="error_disk_space_sub" formatted="false">%d MiB disponible, %d MiB necesario</string>
   <string name="notify_update_available">Una actualización está disponible</string>
-  <string name="notify_checking">Comprobando si hay actualizaciones disponibles &#8230;</string>
+  <string name="notify_checking">Comprobando si hay actualizaciones disponibles&#8230;</string>
   <string name="last_checked" formatted="false">Última comprobación el %s a las %s</string>
-  <string name="last_checked_never">Nunca se ha comprobado, ¿ Tal vez le gustaría hacerlo ?</string>
+  <string name="last_checked_never">Nunca se ha comprobado, ¿Tal vez le gustaría hacerlo?</string>
   <string name="button_flash_now">Aplicar ahora</string>
   <string name="action_secure_mode">Modo Seguro</string>
   <string name="secure_mode_enabled_title">Modo seguro: habilitado</string>

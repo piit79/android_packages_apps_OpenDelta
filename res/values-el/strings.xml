@@ -23,20 +23,20 @@
         Η αποκωδικοποίηση Delta βασίζεται σε <b>xdelta</b>, copyright &copy; _COPYRIGHT_XDELTA_ <b>Joshua MacDonald</b><br>
     ]]></string>
   <string name="state_action_none">Το σύστημα σας είναι ενημερωμένο</string>
-  <string name="state_action_checking">Έλεγχος για ενημερώσεις &#8230;</string>
-  <string name="state_action_checking_md5">Επιβεβαίωση αρχείου &#8230;</string>
-  <string name="state_action_searching">Έρευνα για αρχεία &#8230;</string>
-  <string name="state_action_searching_md5">Επιβεβαίωση αρχείου &#8230;</string>
-  <string name="state_action_downloading">Κατεβάζει &#8230;</string>
-  <string name="state_action_applying">Ενσωματώνει &#8230;</string>
-  <string name="state_action_applying_patch">Ενσωμάτωση &#8230;</string>
-  <string name="state_action_applying_md5">Επιβεβαίωση αρχείου &#8230;</string>
+  <string name="state_action_checking">Έλεγχος για ενημερώσεις&#8230;</string>
+  <string name="state_action_checking_md5">Επιβεβαίωση αρχείου&#8230;</string>
+  <string name="state_action_searching">Έρευνα για αρχεία&#8230;</string>
+  <string name="state_action_searching_md5">Επιβεβαίωση αρχείου&#8230;</string>
+  <string name="state_action_downloading">Κατεβάζει&#8230;</string>
+  <string name="state_action_applying">Ενσωματώνει&#8230;</string>
+  <string name="state_action_applying_patch">Ενσωμάτωση&#8230;</string>
+  <string name="state_action_applying_md5">Επιβεβαίωση αρχείου&#8230;</string>
   <string name="state_action_ready">Υπάρχει διαθέσιμη ενημέρωση</string>
   <string name="state_error_disk_space">Δεν υπάρχει επαρκής χώρος στο δίσκο!</string>
   <string name="state_error_unknown">Άγνωστο σφάλμα</string>
   <string name="error_disk_space_sub" formatted="false">%d MiB διαθέσιμα, %d MiB απαιτούνται</string>
   <string name="notify_update_available">Υπάρχει διαθέσιμη ενημέρωση</string>
-  <string name="notify_checking">Έλεγχος για ενημερώσεις &#8230;</string>
+  <string name="notify_checking">Έλεγχος για ενημερώσεις&#8230;</string>
   <string name="last_checked" formatted="false">Τελευταίος έλεγχος την %s στις %s</string>
   <string name="last_checked_never">Δεν έχει γίνει έλεγχος ακόμα, θέλετε να ελέγξετε εσείς;</string>
   <string name="button_flash_now">Ενημέρωση τώρα</string>

@@ -23,22 +23,22 @@
         Delta dekódování na základě <b>xdelta</b>, copyright &copy; _COPYRIGHT_XDELTA_ <b>Joshua MacDonald</b><br>
     ]]></string>
   <string name="state_action_none">Váš systém je aktuální</string>
-  <string name="state_action_checking">Kontroluji aktualizace &#8230;</string>
-  <string name="state_action_checking_md5">Ověřování souboru &#8230;</string>
-  <string name="state_action_searching">Hledání souborů &#8230;</string>
-  <string name="state_action_searching_md5">Ověřování souboru &#8230;</string>
-  <string name="state_action_downloading">Stahování &#8230;</string>
-  <string name="state_action_applying">Provádění změn &#8230;</string>
-  <string name="state_action_applying_patch">Provádění změn &#8230;</string>
-  <string name="state_action_applying_md5">Ověřování souboru &#8230;</string>
+  <string name="state_action_checking">Kontroluji aktualizace&#8230;</string>
+  <string name="state_action_checking_md5">Ověřování souboru&#8230;</string>
+  <string name="state_action_searching">Hledání souborů&#8230;</string>
+  <string name="state_action_searching_md5">Ověřování souboru&#8230;</string>
+  <string name="state_action_downloading">Stahování&#8230;</string>
+  <string name="state_action_applying">Provádění změn&#8230;</string>
+  <string name="state_action_applying_patch">Provádění změn&#8230;</string>
+  <string name="state_action_applying_md5">Ověřování souboru&#8230;</string>
   <string name="state_action_ready">Aktualizace je k dispozici</string>
-  <string name="state_error_disk_space">Není dostatek místa na disku !</string>
+  <string name="state_error_disk_space">Není dostatek místa na disku!</string>
   <string name="state_error_unknown">Neznámá chyba</string>
   <string name="error_disk_space_sub" formatted="false">%d MiB volných, %d MiB požadovaných</string>
   <string name="notify_update_available">Aktualizace je k dispozici</string>
-  <string name="notify_checking">Kontroluji aktualizace &#8230;</string>
+  <string name="notify_checking">Kontroluji aktualizace&#8230;</string>
   <string name="last_checked" formatted="false">Poslední kontrola proběhla dne %s v %s</string>
-  <string name="last_checked_never">Kontrola nebyla nikdy provedena, možná chcete provést kontrolu nyní ?</string>
+  <string name="last_checked_never">Kontrola nebyla nikdy provedena, možná chcete provést kontrolu nyní?</string>
   <string name="button_flash_now">Aktualizovat nyní</string>
   <string name="action_secure_mode">Zabezpečení</string>
   <string name="secure_mode_enabled_title">Zabezpečený režim: povoleno</string>
