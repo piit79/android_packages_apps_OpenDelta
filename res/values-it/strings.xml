@@ -3,6 +3,7 @@
 <resources>
   <string name="app_name">OpenDelta</string>
   <string name="title">Aggiornamenti di sistema</string>
+  <string name="action_refresh">Controlla ora</string>
   <string name="action_networks">Reti</string>
   <string name="title_networks">Aggiornamento automatico</string>
   <string name="network_2g">2G</string>
@@ -38,7 +39,6 @@
   <string name="notify_checking">Controllo aggiornamenti&#8230;</string>
   <string name="last_checked" formatted="false">Ultimo controllo il %s alle %s</string>
   <string name="last_checked_never">Non abbiamo mai controllato, magari vorresti farlo?</string>
-  <string name="button_check_now">Controlla ora&#8230;</string>
   <string name="button_flash_now">Installa ora</string>
   <string name="action_secure_mode">Sicurezza</string>
   <string name="secure_mode_enabled_title">Modalità Sicura: attivata</string>

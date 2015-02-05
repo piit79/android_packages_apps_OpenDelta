@@ -3,6 +3,7 @@
 <resources>
   <string name="app_name">OpenDelta</string>
   <string name="title">系统更新</string>
+  <string name="action_refresh">立刻检查</string>
   <string name="action_networks">网络</string>
   <string name="title_networks">自动更新网络</string>
   <string name="network_2g">2G</string>
@@ -38,6 +39,5 @@
   <string name="notify_checking">正在检查更新 &#8230;</string>
   <string name="last_checked" formatted="false">最后检查时间 %s at %s</string>
   <string name="last_checked_never">我们从未检查过,也许你愿意这么做 ?</string>
-  <string name="button_check_now">立刻检查 &#8230;</string>
   <string name="button_flash_now">立刻更新</string>
 </resources>

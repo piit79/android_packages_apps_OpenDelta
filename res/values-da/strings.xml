@@ -3,6 +3,7 @@
 <resources>
   <string name="app_name">OpenDelta</string>
   <string name="title">Systemopdateringer</string>
+  <string name="action_refresh">Tjek</string>
   <string name="action_networks">Netværk</string>
   <string name="title_networks">Netværk til autoopdatering</string>
   <string name="network_2g">2G</string>
@@ -38,6 +39,5 @@
   <string name="notify_checking">Søger efter opdateringer &#8230;</string>
   <string name="last_checked" formatted="false">Sidste tjek: %s kl. %s</string>
   <string name="last_checked_never">Der er aldrig blevet tjekket for opdateringer, vil du tjekke nu?</string>
-  <string name="button_check_now">Tjek nu &#8230;</string>
   <string name="button_flash_now">Installer nu</string>
 </resources>

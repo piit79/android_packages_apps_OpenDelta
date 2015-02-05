@@ -3,6 +3,7 @@
 <resources>
   <string name="app_name">OpenDelta</string>
   <string name="title">Aktualizacje systemu</string>
+  <string name="action_refresh">Wyszukaj teraz</string>
   <string name="action_networks">Sieci</string>
   <string name="title_networks">Sieci wykorzystywane przy aktualizacji</string>
   <string name="network_2g">2G</string>
@@ -38,7 +39,6 @@
   <string name="notify_checking">Wyszukiwanie aktualizacji &#8230;</string>
   <string name="last_checked" formatted="false">Ostatnie sprawdzenie %s o %s</string>
   <string name="last_checked_never">Brak ostatnich wyszukiwań, może ty chcesz to zrobić ?</string>
-  <string name="button_check_now">Wyszukaj teraz &#8230;</string>
   <string name="button_flash_now">Wgraj teraz</string>
   <string name="action_secure_mode">Tryb Bezpieczny</string>
   <string name="secure_mode_enabled_title">Tryb bezpieczny: włączony</string>

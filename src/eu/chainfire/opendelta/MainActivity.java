@@ -43,6 +43,10 @@ import android.widget.Button;
 import android.widget.ProgressBar;
 import android.widget.TextView;
 
+import java.io.FileOutputStream;
+import java.io.IOException;
+import java.io.OutputStream;
+import java.io.UnsupportedEncodingException;
 import java.util.Calendar;
 import java.util.Date;
 import java.util.Locale;
@@ -51,7 +55,7 @@ public class MainActivity extends Activity {
     private TextView title = null;
     private TextView sub = null;
     private ProgressBar progress = null;
-    private Button checkNow = null;
+    private MenuItem refresh = null;
     private Button flashNow = null;
     
     private Config config;
@@ -76,7 +80,6 @@ public class MainActivity extends Activity {
         title = (TextView) findViewById(R.id.text_title);
         sub = (TextView) findViewById(R.id.text_sub);
         progress = (ProgressBar) findViewById(R.id.progress);
-        checkNow = (Button) findViewById(R.id.button_check_now);
         flashNow = (Button) findViewById(R.id.button_flash_now);
         
         config = Config.getInstance(this);
@@ -86,6 +89,7 @@ public class MainActivity extends Activity {
     public boolean onCreateOptionsMenu(Menu menu) {
         getMenuInflater().inflate(R.menu.main, menu);
         
+        refresh = (MenuItem) menu.findItem(R.id.action_refresh);
         if (!config.getSecureModeEnable()) {
             menu.findItem(R.id.action_secure_mode).setVisible(false);
         } else {
@@ -178,6 +182,10 @@ public class MainActivity extends Activity {
         switch (item.getItemId()) {
             case android.R.id.home:
                 finish();
+                return true;
+            case R.id.action_refresh:
+                refresh.setActionView(R.layout.actionbar_iprogress);
+                UpdateService.startCheck(this);
                 return true;
             case R.id.action_networks:
                 showNetworks();
@@ -311,7 +319,12 @@ public class MainActivity extends Activity {
             progress.setProgress((int) current);
             progress.setMax((int) total);
 
-            checkNow.setVisibility(enableCheck ? View.VISIBLE : View.GONE);
+            // FIXME: refresh is (sometimes?) set only after this code
+            if (refresh != null) {
+                if (enableCheck) {
+                    refresh.setActionView(null);
+                }
+            }
             flashNow.setVisibility(enableFlash ? View.VISIBLE : View.GONE);
         }
     };
@@ -326,10 +339,6 @@ public class MainActivity extends Activity {
     protected void onStop() {
         unregisterReceiver(updateReceiver);
         super.onStop();
-    }
-
-    public void onButtonCheckNowClick(View v) {
-        UpdateService.startCheck(this);
     }
 
     public void onButtonFlashNowClick(View v) {
@@ -402,7 +411,7 @@ public class MainActivity extends Activity {
     private Runnable flashStart = new Runnable() {       
         @Override
         public void run() {
-            checkNow.setEnabled(false);
+            refresh.setEnabled(false);
             flashNow.setEnabled(false);
             UpdateService.startFlash(MainActivity.this);
         }

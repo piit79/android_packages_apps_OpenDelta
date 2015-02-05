@@ -3,6 +3,7 @@
 <resources>
   <string name="app_name">OpenDelta</string>
   <string name="title">Mise à jour système</string>
+  <string name="action_refresh">Vérifier maintenant</string>
   <string name="action_networks">Réseau</string>
   <string name="title_networks">Réseau de mise à jour automatique</string>
   <string name="network_2g">2G</string>
@@ -38,7 +39,6 @@
   <string name="notify_checking">Vérification des mises à jour disponibles&#8230;</string>
   <string name="last_checked" formatted="false">Dernière vérification le %s à %s</string>
   <string name="last_checked_never">Nous n\'avons jamais effectué de vérification, voulez-vous le faire maintenant\u00A0?</string>
-  <string name="button_check_now">Vérifier maintenant&#8230;</string>
   <string name="button_flash_now">Installer maintenant</string>
   <string name="action_secure_mode">Sécurité</string>
   <string name="secure_mode_enabled_title">Mode de sécurité : activé</string>

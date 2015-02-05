@@ -51,15 +51,6 @@
         android:gravity="right" >
 
         <Button
-            android:id="@+id/button_check_now"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/button_check_now"
-            android:paddingLeft="16dp"
-            android:paddingRight="16dp"
-            android:onClick="onButtonCheckNowClick" />
-
-        <Button
             android:id="@+id/button_flash_now"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
