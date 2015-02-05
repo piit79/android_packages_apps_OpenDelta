@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="title">Systemuppdateringar</string>
+    <string name="action_refresh">Sök nu</string>
     <string name="action_networks">Nätverk</string>
     <string name="title_networks">Nätverk för autouppdatering</string>
     <string name="network_unknown">Annat</string>
@@ -31,7 +32,6 @@
     <string name="notify_checking">Söker efter uppdateringar&#8230;</string>
     <string name="last_checked" formatted="false">Sökte senast den %s vid %s</string>
     <string name="last_checked_never">Du har aldrig sökt. Vill du göra det nu?</string>
-    <string name="button_check_now">Sök nu&#8230;</string>
     <string name="button_flash_now">Installera nu</string>
     <string name="action_secure_mode">Säkert läge</string>
     <string name="secure_mode_enabled_title">Säkert läge aktiverat</string>

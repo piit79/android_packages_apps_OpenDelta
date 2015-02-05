@@ -3,6 +3,7 @@
     <string name="app_name">OpenDelta</string>
     <string name="title">Actualizaciones del sistema</string>
 
+    <string name="action_refresh">Comprobar ahora</string>
     <string name="action_networks">Redes</string>
     <string name="title_networks">Redes de actualización automática</string>
     <string name="network_2g">2G</string>
@@ -45,8 +46,7 @@
     <string name="last_checked" formatted="false">Última comprobación el %s a las %s</string>
     <string name="last_checked_never">Nunca se ha comprobado, ¿ Tal vez le gustaría hacerlo ?</string>
 
-    <string name="button_check_now">Comprobar ahora &#8230;</string>
-    <string name="button_flash_now">Aplicar ahora</string>
+    <string name="button_flash_now">Reiniciar e instalar</string>
 
 <!-- updates from 2013/12/18 -->
 

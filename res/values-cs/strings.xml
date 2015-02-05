@@ -3,6 +3,7 @@
     <string name="app_name">OpenDelta</string>
     <string name="title">Aktualizace systému</string>
 
+    <string name="action_refresh">Zkontrolovat</string>
     <string name="action_networks">Sítě</string>
     <string name="title_networks">Sítě používané pro automatické aktualizace</string>
     <string name="network_2g">2G</string>
@@ -45,6 +46,5 @@
     <string name="last_checked" formatted="false">Poslední kontrola proběhla dne %s v %s</string>
     <string name="last_checked_never">Kontrola nebyla nikdy provedena, možná chcete provést kontrolu nyní ?</string>
 
-    <string name="button_check_now">Zkontrolovat nyní &#8230;</string>
-    <string name="button_flash_now">Aktualizovat nyní</string>
+    <string name="button_flash_now">Restartovat a nainstalovat</string>
 </resources>

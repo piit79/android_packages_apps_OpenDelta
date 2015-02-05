@@ -3,6 +3,7 @@
     <string name="app_name">OpenDelta</string>
     <string name="title">Actualitzacions del sistema</string>
 
+    <string name="action_refresh">Comprovar</string>
     <string name="action_networks">Xarxes</string>
     <string name="title_networks">Actualització automàtica de les xarxes</string>
     <string name="network_2g">2G</string>
@@ -45,7 +46,6 @@
     <string name="last_checked" formatted="false">Darrera comprovació el %s a les %s</string>
     <string name="last_checked_never">Mai s\'ha comprovat, ¿Potser li agradaria fer-ho?</string>
 
-    <string name="button_check_now">Comprovar ara &#8230;</string>
     <string name="button_flash_now">Flashejar ara</string>
 
     <string name="action_secure_mode">Mode Segur</string>

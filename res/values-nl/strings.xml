@@ -3,6 +3,7 @@
     <string name="app_name">OpenDelta</string>
     <string name="title">Systeem update</string>
 
+    <string name="action_refresh">Nu controleren</string>
     <string name="action_networks">Netwerken</string>
     <string name="title_networks">Auto-update netwerken</string>
     <string name="network_2g">2G</string>
@@ -47,6 +48,5 @@
     <string name="last_checked" formatted="false">Laatst gecontroleerd op %s om %s</string>
     <string name="last_checked_never">Er is nog niet eerder op een update gecontroleerd, misschien wil je dat nu doen?</string>
 
-    <string name="button_check_now">Nu controleren &#8230;</string>
     <string name="button_flash_now">Update nu</string>
 </resources>

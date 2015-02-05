@@ -3,6 +3,7 @@
     <string name="app_name">OpenDelta</string>
     <string name="title">Ενημερώσεις συστήματος</string>
 
+    <string name="action_refresh">Έλεγχος τώρα</string>
     <string name="action_networks">Δίκτυα</string>
     <string name="title_networks">Δίκτυα για αυτόματη ενημέρωση</string>
     <string name="network_2g">2G</string>
@@ -45,7 +46,6 @@
     <string name="last_checked" formatted="false">Τελευταίος έλεγχος την %s στις %s</string>
     <string name="last_checked_never">Δεν έχει γίνει έλεγχος ακόμα, θέλετε να ελέγξετε εσείς;</string>
 
-    <string name="button_check_now">Έλεγχος τώρα &#8230;</string>
     <string name="button_flash_now">Ενημέρωση τώρα</string>
 
     <!-- updates from 2013/12/18 -->
