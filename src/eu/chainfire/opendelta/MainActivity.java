@@ -226,7 +226,7 @@ public class MainActivity extends Activity {
                 if (ms == 0) {
                     return "";
                 } else {
-                    return String.format("%s\n%s", filename, getString(R.string.last_checked,
+                    return String.format("%s\n\n%s", filename, getString(R.string.last_checked,
                             DateFormat.getDateFormat(MainActivity.this).format(date),
                             DateFormat.getTimeFormat(MainActivity.this).format(date)
                             ));
