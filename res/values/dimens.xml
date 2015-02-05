@@ -5,4 +5,7 @@
 
     <!-- Size of our large text -->
     <dimen name="TextLarger">22sp</dimen>   
+
+    <!-- ActionBar contentInsetStart -->
+    <dimen name="actionbar_subsettings_contentInsetStart">72dp</dimen>
 </resources>
