@@ -286,7 +286,7 @@ public class MainActivity extends Activity {
                     long ms = intent.getLongExtra(UpdateService.EXTRA_MS, 0);
 
                     if ((ms <= 500) || (current <= 0) || (total <= 0)) {
-                        sub = String.format(Locale.ENGLISH, "%s\n%.0f %%", filename,
+                        sub = String.format(Locale.ENGLISH, "%s\n%.0f%%", filename,
                                 intent.getFloatExtra(UpdateService.EXTRA_PROGRESS, 0));
                     } else {
                         float kibps = ((float) current / 1024f) / ((float) ms / 1000f);
@@ -296,12 +296,12 @@ public class MainActivity extends Activity {
 
                         if (kibps < 10000) {
                             sub = String.format(Locale.ENGLISH,
-                                    "%s\n%.0f %%, %.0f KiB/s, %02d:%02d", filename,
+                                    "%s\n%.0f%%, %.0f KiB/s, %02d:%02d", filename,
                                     intent.getFloatExtra(UpdateService.EXTRA_PROGRESS, 0), kibps,
                                     sec / 60, sec % 60);
                         } else {
                             sub = String.format(Locale.ENGLISH,
-                                    "%s\n%.0f %%, %.0f MiB/s, %02d:%02d", filename,
+                                    "%s\n%.0f%%, %.0f MiB/s, %02d:%02d", filename,
                                     intent.getFloatExtra(UpdateService.EXTRA_PROGRESS, 0),
                                     kibps / 1024f, sec / 60, sec % 60);
                         }

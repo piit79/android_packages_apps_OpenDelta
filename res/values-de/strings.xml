@@ -21,25 +21,25 @@
     ]]></string>
 
     <string name="state_action_none">Dein System ist auf dem aktuellen Stand</string>
-        <string name="state_action_checking">Suche nach Updates &#8230;</string>
-        <string name="state_action_checking_md5">Überprüfe Datei &#8230;</string>
-        <string name="state_action_searching">Suche nach Dateien &#8230;</string>
-        <string name="state_action_searching_md5">Überprüfe Datei &#8230;</string>
-        <string name="state_action_downloading">Lade herunter &#8230;</string>
-        <string name="state_action_applying">Spiele ein &#8230;</string>
-        <string name="state_action_applying_patch">Spiele ein &#8230;</string>
-        <string name="state_action_applying_md5">Überprüfe Datei &#8230;</string>
+        <string name="state_action_checking">Suche nach Updates&#8230;</string>
+        <string name="state_action_checking_md5">Überprüfe Datei&#8230;</string>
+        <string name="state_action_searching">Suche nach Dateien&#8230;</string>
+        <string name="state_action_searching_md5">Überprüfe Datei&#8230;</string>
+        <string name="state_action_downloading">Lade herunter&#8230;</string>
+        <string name="state_action_applying">Spiele ein&#8230;</string>
+        <string name="state_action_applying_patch">Spiele ein&#8230;</string>
+        <string name="state_action_applying_md5">Überprüfe Datei&#8230;</string>
         <string name="state_action_ready">Ein Update ist verfügbar</string>
-        <string name="state_error_disk_space">Nicht genügend Speicherplatz vorhanden !</string>
+        <string name="state_error_disk_space">Nicht genügend Speicherplatz vorhanden!</string>
         <string name="state_error_unknown">Unbekannter Fehler</string>
 
         <string name="error_disk_space_sub" formatted="false">%d MiB verfügbar, %d MiB benötigt</string>
 
         <string name="notify_update_available">Ein Update ist verfügbar</string>
-        <string name="notify_checking">Suche nach Updates &#8230;</string>
+        <string name="notify_checking">Suche nach Updates&#8230;</string>
 
         <string name="last_checked" formatted="false">Letzte Überprüfung am %s um %s</string>
-        <string name="last_checked_never">Noch niemals überprüft. Möchtest du jetzt nach neuen Updates suchen ?</string>
+        <string name="last_checked_never">Noch niemals überprüft. Möchtest du jetzt nach neuen Updates suchen?</string>
 
         <string name="button_flash_now">Neuladen &amp; installieren</string>
 
