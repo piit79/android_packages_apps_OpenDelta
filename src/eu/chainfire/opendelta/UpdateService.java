@@ -23,6 +23,7 @@ package eu.chainfire.opendelta;
 
 import android.annotation.SuppressLint;
 import android.app.AlarmManager;
+import android.app.AlertDialog;
 import android.app.Notification;
 import android.app.NotificationManager;
 import android.app.PendingIntent;
@@ -63,7 +64,9 @@ import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.OutputStream;
+import java.io.DataOutputStream;
 import java.io.UnsupportedEncodingException;
+import java.lang.Runtime;
 import java.lang.reflect.Method;
 import java.math.BigInteger;
 import java.security.MessageDigest;
@@ -1004,6 +1007,9 @@ public class UpdateService
         }
 
         try {
+            String destFilenameTWRP = "/cache/recovery/openrecoveryscript";
+            File tempFileTWRP = File.createTempFile("openrecoveryscript", null, getCacheDir());
+
             // TWRP - OpenRecoveryScript - the recovery will find the correct
             // storage root for the ZIPs, life is nice and easy.
             //
@@ -1025,8 +1031,7 @@ public class UpdateService
                     setPermissions("/cache/recovery/keys", 0644, Process.myUid(), 2001 /* AID_CACHE */);
                 }
 
-                FileOutputStream os = new FileOutputStream("/cache/recovery/openrecoveryscript",
-                        false);
+                FileOutputStream os = new FileOutputStream(tempFileTWRP, false);
                 try {
                     if (config.getInjectSignatureEnable()) {
                         writeString(os, "cmd cat /res/keys > /res/keys_org");
@@ -1054,9 +1059,11 @@ public class UpdateService
                     os.close();
                 }
 
-                setPermissions("/cache/recovery/openrecoveryscript", 0644, Process.myUid(), 2001 /* AID_CACHE */);
+                //setPermissions("/cache/recovery/openrecoveryscript", 0644, Process.myUid(), 2001 /* AID_CACHE */);
             }
 
+            String destFilenameCWM = "/cache/recovery/extendedcommand";
+            File tempFileCWM = File.createTempFile("extendedcommand", null, getCacheDir());
             // CWM - ExtendedCommand - provide paths to both internal and
             // external storage locations, it's nigh impossible to know in
             // practice which will be correct, not just because the internal
@@ -1069,7 +1076,7 @@ public class UpdateService
             // We don't generate a CWM script in secure mode, because it
             // doesn't support checking our custom signatures
             if (!config.getSecureModeCurrent()) {
-                FileOutputStream os = new FileOutputStream("/cache/recovery/extendedcommand", false);
+                FileOutputStream os = new FileOutputStream(tempFileCWM, false);
                 try {
                     writeString(os,
                             String.format("install_zip(\"%s%s\");", "/sdcard/", flashFilename));
@@ -1092,12 +1099,45 @@ public class UpdateService
                 (new File("/cache/recovery/extendedcommand")).delete();
             }
 
+            Logger.i(tempFileTWRP.getPath());
+            Logger.i(tempFileCWM.getPath());
+            // move the files into /cache/recovery using su
+            int result;
+            try {
+                java.lang.Process su = Runtime.getRuntime().exec("su");
+                DataOutputStream suInput = new DataOutputStream(su.getOutputStream());
+
+                suInput.writeBytes("mv " + tempFileTWRP.getPath() + " " +
+                        destFilenameTWRP + "\n");
+                suInput.writeBytes("mv " + tempFileCWM.getPath() + " " +
+                        destFilenameCWM + "\n");
+                suInput.writeBytes("chmod 644 " + destFilenameTWRP + " " +
+                        destFilenameCWM + "\n");
+
+                suInput.writeBytes("exit\n");
+                suInput.flush();
+                result = su.waitFor();
+            } catch (IOException e) {
+                throw new Exception(e);
+            } catch (InterruptedException e) {
+                throw new Exception(e);
+            }
+
+            if (result != 0) {
+                // su failed, either no root or root not granted
+                new AlertDialog.Builder(this)
+                .setTitle("Root Failed")
+                .setMessage("Sorry, root rights couldn't be obtained to create flash scripts. Please flash the update manually after your phone reboots to recovery.")
+                .setPositiveButton(android.R.string.ok, null)
+                .show();
+            }
+
             ((PowerManager) getSystemService(Context.POWER_SERVICE)).reboot("recovery");
         } catch (Exception e) {
             // We have failed to write something. There's not really anything
             // else to do at
             // at this stage than give up. No reason to crash though.
-            Logger.ex(e);
+            Logger.i(e.toString());
         }
     }
 
